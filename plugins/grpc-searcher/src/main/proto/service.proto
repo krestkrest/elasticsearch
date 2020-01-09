@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package search;
+
+option java_package = "org.elasticsearch.searcher.grpc";
+
+service SearchService {
+    rpc Search(SearchRequest) returns (SearchResponse) {}
+}
+
+message SearchRequest {
+    // upper limit for returned document IDs count
+    uint64 limit = 1;
+    // elasticsearch JSON query that is typically used in SEARCH requests
+    string query = 2;
+}
+
+message SearchResponse {
+    // total matched documents count
+    uint64 total = 1;
+    // matched document IDs
+    repeated string ids = 2;
+}
