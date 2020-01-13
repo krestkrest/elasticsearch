@@ -19,6 +19,9 @@ configurations {
     doNotExclude
 }
 
+targetCompatibility = "10"
+sourceCompatibility = "10"
+
 dependencies {
     compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.11.0'
     implementation 'io.grpc:grpc-netty-shaded:1.26.0'

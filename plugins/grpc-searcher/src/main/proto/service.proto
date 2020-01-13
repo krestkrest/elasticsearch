@@ -28,10 +28,12 @@ service SearchService {
 }
 
 message SearchRequest {
-    // upper limit for returned document IDs count
-    uint64 limit = 1;
+    // elasticsearch index that should be affected by request
+    string index = 1;
     // elasticsearch JSON query that is typically used in SEARCH requests
     string query = 2;
+    // upper limit for returned document IDs count
+    uint64 limit = 3;
 }
 
 message SearchResponse {
