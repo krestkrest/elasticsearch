@@ -64,7 +64,7 @@ sourceSets {
 
 esplugin {
     description 'GRPC plugin to fetch 100k+ elasticsearch documents IDs faster than in 300ms'
-    classname 'org.elasticsearch.searcher.grpc.GrpcPlugin'
+    classname 'org.elasticsearch.grpc.searcher.GrpcPlugin'
 }
 
 checkstyleMain.source = 'src/main/java'
@@ -74,3 +74,4 @@ dependencyLicenses.enabled = false
 licenseHeaders.enabled = false
 testingConventions.enabled = false
 thirdPartyAudit.enabled = false
+loggerUsageCheck.enabled = false

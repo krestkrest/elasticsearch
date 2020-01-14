@@ -1,4 +1,4 @@
-package org.elasticsearch.searcher.grpc;
+package org.elasticsearch.grpc.searcher;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -11,7 +11,7 @@ public class SearchServer extends AbstractLifecycleComponent {
     Server server;
 
     public SearchServer(Client client) {
-        server = ServerBuilder.forPort(10000).addService(new SearchService(client)).build();
+        server = ServerBuilder.forPort(1337).addService(new SearchService(client)).build();
     }
 
     @Override

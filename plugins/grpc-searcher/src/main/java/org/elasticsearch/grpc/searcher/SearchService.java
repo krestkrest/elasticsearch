@@ -1,9 +1,11 @@
-package org.elasticsearch.searcher.grpc;
+package org.elasticsearch.grpc.searcher;
 
 import io.grpc.stub.StreamObserver;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.searcher.grpc.SearchServiceGrpc;
+import org.elasticsearch.searcher.grpc.Service;
 
 import java.util.ArrayList;
 

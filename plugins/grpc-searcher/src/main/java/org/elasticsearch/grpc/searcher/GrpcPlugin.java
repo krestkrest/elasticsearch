@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.elasticsearch.searcher.grpc;
+package org.elasticsearch.grpc.searcher;
 
 import org.elasticsearch.client.Client;
 import org.elasticsearch.cluster.service.ClusterService;
