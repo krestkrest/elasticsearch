@@ -69,6 +69,8 @@ esplugin {
 
 checkstyleMain.source = 'src/main/java'
 
+integTest.enabled = false
+unitTest.enabled = false
 dependenciesInfo.enabled = false
 dependencyLicenses.enabled = false
 licenseHeaders.enabled = false
